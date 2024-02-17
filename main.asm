@@ -17,6 +17,7 @@ _start:
     mov rdx, 8
     syscall
 
+    //print new line
     mov rax, 0x01
     mov rdi, 0x01
     lea rsi, [newline]
