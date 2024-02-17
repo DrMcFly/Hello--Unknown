@@ -14,7 +14,7 @@ _start:
     mov rax, 0x01
     mov rdi, 0x01
     lea rsi, [name]
-    mov rdx, 5
+    mov rdx, 8
     syscall
 
     mov rax, 0x01
