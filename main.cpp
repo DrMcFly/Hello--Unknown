@@ -23,7 +23,7 @@ struct asm_math {
     int result{};
 
     asm volatile (
-        "mov (%[a]), %[result]\n"
+        "mov (%[a]), %[result]\n\t"
         "sub (%[b]), %[result]"
         : [result] "=r" (result)
         : [a] "r" (a),
